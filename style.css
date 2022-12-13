@@ -152,7 +152,7 @@ footer a {
 
 .img-responsive {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 .text-center {
@@ -181,12 +181,21 @@ footer a {
   margin: 30px 0;
 }
 
+.card-header.grid {
+  grid-gap: 0;
+}
+
 .card-body {
   padding: 30px;
 }
 
 .card-footer {
   padding: 30px;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .btn {
@@ -203,7 +212,11 @@ footer a {
   text-decoration: none;
 }
 
-@media (max-width: 600px) {
+.instagram-embed {
+  margin: 30px 0;
+}
+
+@media (max-width: 900px) {
   header {
     padding: 60px 0;
   }
@@ -227,5 +240,13 @@ footer a {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
