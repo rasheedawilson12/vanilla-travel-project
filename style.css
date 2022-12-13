@@ -168,7 +168,7 @@ footer a {
   grid-template-columns: 1fr 1fr;
 }
 
-.grid-3-col {
+.grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
@@ -203,7 +203,7 @@ footer a {
   text-decoration: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   header {
     padding: 60px 0;
   }
